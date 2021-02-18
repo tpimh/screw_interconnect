@@ -6,4 +6,10 @@ This model is currently using laser-cut parts, 3D-printed parts and off-the-shel
 
 To build a custom box you would need rigid laser-cuttable sheet material, 8 3D-printed corners, 4 M2 hex-pillars, 16 M2 hex-nuts and 24 M2 countersunk screws.
 
+## 3D model
+
 ![screenshot](/screenshot.png)
+
+## Real thing
+
+![photo](/photo.jpg)
