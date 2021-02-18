@@ -11,6 +11,8 @@ FINGER = 7.5;
 
 T = 0.05;
 
+m2_standoff = ["M2 Standoff", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
 sides_assembly();
 standoff_assembly();
 %box();
@@ -156,7 +158,7 @@ module standoff(height) {
     }*/
     echo(height);
     difference() {
-        rotate([0, 0, 45]) nutHole(size = ["M2 Standoff", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], tolerance = 0, h = height);
+        rotate([0, 0, 45]) nutHole(size = m2_standoff, tolerance = 0, h = height);
         translate([0, 0, - T]) boltHole(size = metric_fastener[2], length = height + T * 2);
     }
 }
@@ -198,7 +200,7 @@ module corner_support_side(size) {
 module nut_bolt_hole(size, standoff = false) {
     translate([0, 0, -1.9]) boltHole(size = metric_fastener[size], length = 2);
     if (standoff) {
-        nutHole(size = ["M2 Standoff", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], h = 2);
+        nutHole(size = m2_standoff, h = 2);
     } else {
         nutHole(size = metric_fastener[size], h = 2);
     }
