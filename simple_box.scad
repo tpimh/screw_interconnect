@@ -5,8 +5,8 @@ $fn = 124;
 
 SIZE_X = 92;
 SIZE_Y = 85;
-SIZE_Z = 23;
-BOX_Z = 1.5;
+SIZE_Z = 23.8;
+BOX_Z = 1.9;
 FINGER = 7.5;
 
 T = 0.05;
